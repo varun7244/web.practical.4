@@ -1,0 +1,104 @@
+
+
+
+
+
+
+<html>
+<head>
+<link rel="shortcut icon" type="image/png" href="MyIcon.ico">  
+<style type="text/css">
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
+*, *:before, *:after {
+  margin:0;
+  padding:0;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+body {
+  padding:3em 1em;
+  font-family: 'Ubuntu Mono', sans-serif;
+  line-height:1.6em;
+  text-align: center;
+  color:white;
+  background:#121212;
+}
+em {font-style:normal;font-size:1.2em;}
+i {font-style:normal;color:#00ff77;}
+p {padding-bottom:1em;}
+hr {
+  position:relative;
+  padding:3rem 0;
+  border:none;
+}
+hr:before {
+  content:'\2044\2217\2013\2013\2013\2013\2013\2217\2044';
+  position:absolute;
+  top:1.2rem;
+  right:0;
+  left:0;
+  font-size:1.5em;
+  color:#FFFFFF;
+  text-align:center;
+}
+form {
+        background-color: #303030;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+   
+        .form-control input, {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+       
+     
+</style>
+<title>REVERSE</title>
+<script>
+function rev_1(){
+var a,no,b,temp=0;
+
+no=Number(document.getElementById("num").value);
+
+b=no;
+while(no>0)
+{
+a=no%10;
+no=parseInt(no/10);
+temp=temp*10+a;
+}
+document.getElementById("answer").value= temp;
+}
+</script>
+</head>
+<body>
+<h2> Reverse of a Number </h2>
+<br><br><br><br>
+
+Enter Your Number: <input id="num">
+
+<button onclick="rev_1()">Reverse</button>
+<input id="answer">
+<br><br>
+<br>
+</body>
+</html>

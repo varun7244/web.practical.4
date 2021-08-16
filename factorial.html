@@ -1,0 +1,50 @@
+
+<html>
+<head>
+<link rel="shortcut icon" type="image/png" href="MyIcon.ico">  
+<style type="text/css">
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
+*, *:before, *:after {
+  margin:0;
+  padding:0;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+body {
+  padding:3em 1em;
+  font-family: 'Ubuntu Mono', sans-serif;
+  line-height:1.6em;
+  text-align: center;
+  color:white;
+  background:#121212;
+}
+</style>
+<title>FACTORIAL</title>
+<script>
+function fact_(){
+
+var i, no, fact;
+fact=1;
+no=Number(document.getElementById("num").value);
+for(i=1; i<=no; i++)  
+{
+fact= fact*i;
+}  
+document.getElementById("answer").value= fact;
+}
+</script>
+</head>
+<body>
+<h2> Calculate Factorial </h2>
+<br><br><br><br>
+
+Enter Your Number: <input id="num">
+
+<button onclick="fact_()">Factorial</button>
+<input id="answer">
+<br><br>
+<br>
+</body>
+</html>
